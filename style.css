@@ -1,0 +1,249 @@
+* { 
+
+  box-sizing: border-box; 
+
+  font-family: Arial, sans-serif; 
+
+} 
+
+ 
+
+body { 
+
+  margin: 0; 
+
+  padding: 0; 
+
+} 
+
+ 
+
+/* NAVBAR */ 
+
+.navbar { 
+
+  border: 2px solid black; 
+
+  padding: 20px; 
+
+  display: flex; 
+
+  align-items: center; 
+
+} 
+
+ 
+
+.nav-left { 
+
+  flex: 1; 
+
+} 
+
+ 
+
+.nav-left a { 
+
+  margin-right: 15px; 
+
+  text-decoration: none; 
+
+  color: black; 
+
+} 
+
+ 
+
+.nav-center { 
+
+  flex: 1; 
+
+  text-align: center; 
+
+  font-weight: bold; 
+
+} 
+
+ 
+
+/* ABOUT ME */ 
+
+.about { 
+
+  border: 2px solid black; 
+
+  margin: 40px; 
+
+  padding: 20px; 
+
+  height: 200px; 
+
+} 
+
+ 
+
+/* LANGUAGES */ 
+
+.languages { 
+
+  text-align: center; 
+
+  margin-top: 40px; 
+
+} 
+
+ 
+
+.card-row { 
+
+  display: flex; 
+
+  justify-content: center; 
+
+  gap: 40px; 
+
+  margin: 40px 0; 
+
+} 
+
+ 
+
+.card { 
+
+  width: 180px; 
+
+  height: 220px; 
+
+  border: 2px solid black; 
+
+  display: flex; 
+
+  align-items: center; 
+
+  justify-content: center; 
+
+  text-align: center; 
+
+  padding: 10px; 
+
+} 
+
+/* FOOTER */ 
+
+.footer { 
+
+  border-top: 2px solid black; 
+
+  margin-top: 60px; 
+
+  padding: 20px; 
+
+  text-align: center; 
+
+} 
+
+ 
+
+.footer-links { 
+
+  margin-top: 10px; 
+
+} 
+
+ 
+
+.footer-links a { 
+
+  margin: 0 10px; 
+
+  text-decoration: none; 
+
+  color: black; 
+
+} 
+
+/* =========================== 
+
+   RESPONSIVE DESIGN 
+
+   =========================== */ 
+
+ 
+
+/* TABLETS */ 
+
+@media (max-width: 900px) { 
+
+ 
+
+  .navbar { 
+
+    flex-direction: column; 
+
+    gap: 10px; 
+
+    text-align: center; 
+
+  } 
+
+ 
+
+  .nav-left { 
+
+    justify-content: center; 
+
+  } 
+
+ 
+
+  .card-row { 
+
+    flex-wrap: wrap; 
+
+    gap: 20px; 
+
+  } 
+
+ 
+
+  .card { 
+
+    width: 45%; 
+
+  } 
+
+} 
+
+ 
+
+/* PHONES */ 
+
+@media (max-width: 500px) { 
+
+ 
+
+  .about { 
+
+    margin: 20px; 
+
+    height: auto; 
+
+  } 
+
+ 
+
+  .card { 
+
+    width: 90%; 
+
+  } 
+
+ 
+
+  .card-row { 
+
+    gap: 20px; 
+
+  } 
+
+} 
